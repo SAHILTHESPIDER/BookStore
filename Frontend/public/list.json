@@ -1,0 +1,102 @@
+[
+   {
+      "id":1,
+      "name":"Story Book",
+      "title":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price":0,
+      "category":"Free",
+      "image":".//Book.jpg"
+      
+   },
+   {
+      "id":2,
+      "name":"Story Book",
+      "title":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price":0,
+      "category":"Free",
+      "image":".//Book.jpg"
+      
+   },
+   {
+      "id":3,
+      "name":"Story Book",
+      "title":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price":0,
+      "category":"Free",
+      "image":".//Book.jpg"
+      
+   },
+   {
+      "id":4,
+      "name":"Story Book",
+      "title":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price":0,
+      "category":"Free",
+      "image":".//Book.jpg"
+      
+   },
+   {
+      "id":5,
+      "name":"Story Book",
+      "title":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price":0,
+      "category":"Free",
+      "image":".//Book.jpg"
+      
+   },
+   {
+      "id":6,
+      "name":"Story Book",
+      "title":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price":0,
+      "category":"Free",
+      "image":".//Book.jpg"
+      
+   },
+   {
+      "id":7,
+      "name":"Story Book",
+      "title":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price":0,
+      "category":"Free",
+      "image":".//Book.jpg"
+      
+   },
+   {
+      "id":8,
+      "name":"Story Book",
+      "title":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price":0,
+      "category":"Free",
+      "image":".//Book.jpg"
+      
+   },
+   {
+      "id":9,
+      "name":"Story Book",
+      "title":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price":0,
+      "category":"Free",
+      "image":".//Book.jpg"
+      
+   },
+   {
+      "id":10,
+      "name":"GAME Book",
+      "title":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price":400,
+      "category":"GAME",
+      "image":".//Book.jpg"
+      
+   },
+   {
+      "id":11,
+      "name":"FOOD Book",
+      "title":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "price":1000,
+      "category":"FOOD",
+      "image":".//Book.jpg"
+      
+   }
+
+]
