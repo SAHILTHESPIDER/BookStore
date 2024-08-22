@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
+import axios from 'axios';
+import toast from 'react-hot-toast';
 
 function Login() {
   const {
@@ -9,11 +11,38 @@ function Login() {
     formState: { errors },
   } = useForm();
   
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    const userInfo = { 
+      email: data.Email, // Correctly mapping data.Email
+      password: data.password, // Correctly mapping data.password
+    };
+    await axios.post("http://localhost:4001/user/login", userInfo)
+      .then((res) => {
+        console.log(res.data);
+        if (res.data) {
+          toast.success('Login successfully');
+          setTimeout(() => {
+            document.getElementById("my_modal_3").close()
+            window.location.reload();
+            localStorage.setItem("Users", JSON.stringify(res.data.user));
+          },3000)
+          
+          
+        }
+       
+      })
+      .catch((err) => {
+        if (err.response) {
+          toast.error('This is an error! ' + err.response.data.message);
+          setTimeout(()=>{},3000)
+          console.log(err);
+        }
+      });
+  };
   
   return (
     <div>
-      {/* You can open the modal using document.getElementById('ID').showModal() method */}
+      {/* You can open the modal using document.getElementById('my_modal_3').showModal() method */}
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box">
           <h3 className="font-bold text-lg">Login</h3>
@@ -50,7 +79,9 @@ function Login() {
               </button>
               <p>Not registered? <Link to="/signup" className='text-blue-500 underline cursor-pointer'>Sign Up</Link></p>
             </div>
-            <Link to="/" className='btn btn-sm btn-circle btn-ghost absolute right-2 top-2'>✕</Link>
+            <Link to="/" className='btn btn-sm btn-circle btn-ghost absolute right-2 top-2' 
+            onClick={()=>document.getElementById("my_modal_3").close()}
+            >✕</Link>
           </form>
         </div>
       </dialog>
