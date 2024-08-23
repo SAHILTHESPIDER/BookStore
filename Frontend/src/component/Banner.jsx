@@ -1,5 +1,6 @@
 import React from 'react'
 import banner from "../../public/Banner.png"
+import { Link } from 'react-router-dom'
 export default function Banner() {
   return (
   <>
@@ -23,7 +24,9 @@ export default function Banner() {
   </svg>
   <input type="text" className="grow" placeholder="Email" />
 </label>
-<button className="btn btn-secondary mt-3">Secondary</button>
+<Link to="/Course">
+<button className="btn btn-secondary mt-3">Get started</button></Link>
+
        </div>
        
        <div className="w-full md:w-1/2 mt-8 flex justify-center items-center">

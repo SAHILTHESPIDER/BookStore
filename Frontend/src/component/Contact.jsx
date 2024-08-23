@@ -1,11 +1,13 @@
 import React from 'react';
-
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaAddressCard } from "react-icons/fa";
 function Contact() {
   return (
     <>
    <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-12'>
    <div className='w-full md:w-1/2 mt-12 md:mt-32 '>
-          <h1 className='text-5xl'>Contact Us</h1>
+          <h1 className='text-5xl'>Contact  <span className='text-pink-500'>Us</span></h1>
 
           <div className='mt-4 space-y-2'>
             <span>Name</span>
@@ -50,15 +52,20 @@ function Contact() {
 </div>          
         </div>
         <div className="w-full md:w-1/2 mt-24 flex flex-col justify-start border-l-2 border-slate-800 pl-4">
-  <h1 className="text-5xl mb-4">Get To Know</h1>
-  <div className="flex items-center">
-    
-    <p className='mt-4'>Email: sahilgupta9594@gmail.com</p>
+  <h1 className="text-5xl ">Get To Know</h1>
+  <div className="flex items-center space-x-2">
+  <MdEmail className='mt-4 text-2xl' />
+    <p className='mt-4 text-2xl'>Email: sahilgupta9594@gmail.com</p>
     
   </div>
-  <div className="flex items-center mt-3">
+  <div className="flex items-center mt-3 space-x-2">
+  <FaPhoneAlt className='text-2xl'  />
+    <p className='text-2xl'>Mobile Number:8097759738 </p>
     
-    <p>Mobile Number:8097759738 </p>
+  </div>
+  <div className="flex items-center mt-3 space-x-2">
+  <FaAddressCard className='text-2xl'  />
+    <p className='text-2xl'>Adress:India </p>
     
   </div>
 </div>

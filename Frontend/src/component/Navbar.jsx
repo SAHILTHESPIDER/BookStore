@@ -50,7 +50,7 @@ import Logout from './Logout';
          </li>
       <li><a href='/Course'>COURSE</a></li>
       <li><a href='/contact'>CONTACT</a></li>
-      <li><a>ABOUT US</a></li></>
+      <li><a href='/about'>ABOUT US</a></li></>
       );
   return (
   <>

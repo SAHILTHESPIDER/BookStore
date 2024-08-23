@@ -6,6 +6,7 @@ import Courses from './Courses/Courses'
 import Signup from './component/Signup'
 import Contacts from './Contact/Contacts'
 import { useAuth } from './context/AuthProvider';
+import Abouts from './about/Abouts';
 
 export default function App() {
   const [authUser,setAuthUser]=useAuth()
@@ -21,6 +22,7 @@ export default function App() {
     <Route path='/Course' element={authUser ? <Courses />:<Navigate to="/signup"/>}/>
     <Route path='/signup' element={<Signup />}/>
     <Route path='/contact' element={<Contacts />}/>
+    <Route path='/about' element={<Abouts />}/>
   </Routes>
   <Toaster />
 
