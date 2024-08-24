@@ -44,8 +44,8 @@ function Login() {
     <div>
       {/* You can open the modal using document.getElementById('my_modal_3').showModal() method */}
       <dialog id="my_modal_3" className="modal">
-        <div className="modal-box">
-          <h3 className="font-bold text-lg">Login</h3>
+        <div className="modal-box dark:bg-slate-900 dark:text-white">
+          <h3 className="font-bold text-lg ">Login</h3>
           <form onSubmit={handleSubmit(onSubmit)} method="dialog">
             <div className='mt-4 space-y-2'>
               <span>Email</span>
@@ -53,13 +53,13 @@ function Login() {
               <input 
                 type="email" 
                 placeholder='Enter your Email' 
-                className='w-80 px-3 py-1 border rounded-md outline-none'
+                className='w-80 px-3 py-1 border rounded-md outline-none dark:text-black'
                 {...register("Email", { required: true })}
               />
               {errors.Email && <span>This field is required</span>}
             </div>
             {/* password */}
-            <div className='mt-4 space-y-2'>
+            <div className='mt-4 space-y-2  dark:text-black'>
               <span>Password</span>
               <br />
               <input 

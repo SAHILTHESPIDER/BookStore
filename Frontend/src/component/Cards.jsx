@@ -8,17 +8,18 @@ function Cards({item}) {
    <div className='mt-10 my-2 p-4'>
    <div className="card bg-base-100 w-92 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
   <figure>
-    <img
+    <img className='w-50 h-60  object-fill'
       src={item.image} alt="Shoes" />
   </figure>
   <div className="card-body">
     <h2 className="card-title">
-      {item.name}
+      {item.name.length>15? item.name.slice(0,15)+"..":item.name}
       <div className="badge badge-secondary"></div>
     </h2>
-    <p>{item.title}</p>
+    <p>{item.title.length>40?item.title.slice(0,40)+"...":item.title}</p>
     <div className="card-actions justify-between">
-      <div className="badge badge-outline">{item.category}</div>
+      <div className="badge badge-outline mt-2">{item.category}
+      </div>
       <div className="cursor-pointer px-2 py-1 rounded-full border-[2px] hover:bg-pink-400 hover:text-white duration-200 ">Buy Now</div>
     </div>
   </div>

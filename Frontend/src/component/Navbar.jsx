@@ -79,7 +79,7 @@ import Logout from './Logout';
          dark:bg-slate-900 dark:text-white">{Navitems}
       </ul>
     </div>
-    <a className="text-2x1 font-bold cursor-pointer">Bookstore</a>
+    <a href='/' className="text-3xl font-bold cursor-pointer">Bookstore</a>
   </div>
   <div className="navbar-end dark:bg-slate-900 dark:text-white">
   <div className="navbar-center hidden lg:flex">
