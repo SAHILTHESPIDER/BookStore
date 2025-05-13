@@ -94,4 +94,5 @@ Would you like me to:
 - Create sample screenshots for UI (you can upload one or I can generate a placeholder)?
 - Generate a short demo video section?
 
+
 Let me know how you'd like to polish it further!
