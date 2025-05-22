@@ -5,7 +5,6 @@ A simple and functional **Book Store web application** built using modern web te
 
 ---
 
-
 ## 🚀 Features
 
 
