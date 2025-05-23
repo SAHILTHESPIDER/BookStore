@@ -2,7 +2,6 @@
 
 
 
-
 A simple and functional **Book Store web application** built using modern web technologies. This project allows users to **browse, add, update, and delete books**, showcasing CRUD operations and user-friendly UI/UX.
 
 ---
